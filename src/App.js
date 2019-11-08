@@ -10,8 +10,6 @@ import ListaCitas from './components/listaCitas'
 //https://www.netlify.com/
 // npm run build  para realizar el compilado y hacer el deplyment
 
-
-
 class App extends Component{
   state = {
     //array de objetos que tendra todas las citas creadas

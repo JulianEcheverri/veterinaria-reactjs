@@ -23,7 +23,7 @@ class CrearCita extends Component {
     handleChange = e =>{
         //console.log(`${e.target.name}: ${e.target.value}`);
 
-        // colotar lo que el usuario estribe en el state
+        // colocar lo que el usuario estribe en el state
         this.setState({
             cita: {
                 ...this.state.cita, //copiar el array y asignarlo en el state y solo remplazar el valor copiado para no sobreescribir --- sintaxis spread operator para copiar arrays
@@ -59,10 +59,11 @@ class CrearCita extends Component {
 
         //Agregar la cita al state de App,js
 
-        //para acceder a los props del class component usamos la palabra 'props'
         //el flujo de datos solo fluye del componente padre al componente hijo; sin embargo, para pasar datos del componente hijo al padre, se crea una funcion que reciba datos
         //y se le envia al componente hijo donde sera cargada
         //cargamos la funcion que fue enviada desde el componente padre
+
+        //para acceder a los props del class component usamos la palabra 'props'
         this.props.crearNuevaCita(nuevaCita);
 
         //colocar el stateInicial en el state para reiniciar el fomulario
